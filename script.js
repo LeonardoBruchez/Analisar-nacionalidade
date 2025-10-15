@@ -8,12 +8,15 @@ function calcular() {
 
   res.style.textAlign = 'center'
   res.style.marginBlock = '3rem'
+  res.style.font = '400 1.5rem arial'
 
   res2.style.textAlign = 'center'
   res2.style.marginBlock = '1rem'
+  res2.style.font = '400 1.4rem arial'
   
   res3.style.textAlign = 'center'
   res3.style.marginBlock = '1rem'
+  res3.style.font = '400 1.4rem arial'
 
   res2.textContent = ''
   res3.textContent = ''

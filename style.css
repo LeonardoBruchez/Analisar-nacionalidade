@@ -1,15 +1,26 @@
-body {
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: greenyellow;
 }
 
 main {
+  background-color: yellowgreen;
+  width: 30rem;
   margin: auto;
+  height: 64rem;
 
   header {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-block: 3rem;
+    margin-block: 0 3rem;
+    padding-top: 3rem;
+    align-items: center;
 
     & img {
       width: 30px;
@@ -17,19 +28,60 @@ main {
       border-radius: 2rem;
     }
     & h1 {
-      font: 500 1.5rem arial;
+      font: 500 1.8rem arial;
       text-align: center;
     }
   }
 
   .input-wrapper{
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 1rem;
+
+    & p {
+      font: 400 1.4rem arial;
+    }
+
     & input {
       height: 30px;
       display: flex;
       align-self: center;
+      background-color: aqua;
+      border-radius: 0.7rem;
+      border: none;
+      padding: 0.5rem;
+
+      &:focus,&:hover {
+        border: none;
+      }
+
+      &:focus,&:hover{
+        outline: 2px solid green;
+        background-color: aqua;
+      }
+
+      &:focus:placeholder-shown{
+        background-color: aqua;
+      }
+    }
+
+    & #txt2{
+      padding-left: 0.6rem;
+    }
+
+    & #buttonInput{
+      cursor: pointer;
+    }
+
+  }
+}
+
+@media (width >= 64rem){
+  main {
+    width: 64rem;
+
+    .input-wrapper{
+      display: flex;
     }
   }
 }
