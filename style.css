@@ -1,0 +1,35 @@
+body {
+
+}
+
+main {
+  margin: auto;
+
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-block: 3rem;
+
+    & img {
+      width: 30px;
+      height: 60px;
+      border-radius: 2rem;
+    }
+    & h1 {
+      font: 500 1.5rem arial;
+      text-align: center;
+    }
+  }
+
+  .input-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    & input {
+      height: 30px;
+      display: flex;
+      align-self: center;
+    }
+  }
+}
